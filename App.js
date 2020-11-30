@@ -1,21 +1,10 @@
 import React from 'react';
-import { StyleSheet } from 'react-native';
-import CalendarDate from './components/CalendarDate';
-import Select from './components/Select';
-import TimePicker from './components/TimePicker';
+import Actividad1 from './screens/Actividad1';
 
 const App = () => {
   return (
-    <>
-      <Select/>
-      <CalendarDate/>
-      <TimePicker/>
-    </>
+    <Actividad1 />
   );
 };
-
-const styles = StyleSheet.create({
-  
-});
 
 export default App;

@@ -6,6 +6,7 @@ const CalendarDate = () => {
     return (
         <Calendar
             // Collection of dates that have to be marked. Default = {}
+            current={'2020-11-28'}
             markedDates={{
                 '2020-11-16': {selected: true, marked: true, selectedColor: 'blue'},
             }}

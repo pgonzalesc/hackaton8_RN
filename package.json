@@ -15,8 +15,11 @@
     "moment": "^2.29.1",
     "react": "16.13.1",
     "react-native": "0.63.3",
+    "react-native-calendar-strip": "^2.0.9",
     "react-native-calendars": "^1.489.0",
+    "react-native-datepicker": "^1.7.2",
     "react-native-dropdown-picker": "^3.7.1",
+    "react-native-image-picker": "^2.3.4",
     "react-native-material-dropdown": "^0.11.1",
     "react-native-picker-select": "^8.0.3",
     "react-native-vector-icons": "^7.1.0"
