@@ -1,7 +1,5 @@
 import React, {useState} from 'react';
-import { StyleSheet, Text, View, FlatList, Animated } from 'react-native';
 import RNPickerSelect from 'react-native-picker-select';
-import {Calendar, CalendarList, Agenda} from 'react-native-calendars';
 import moment from 'moment';
 import CalendarStrip from 'react-native-calendar-strip';
 
@@ -57,24 +55,20 @@ const PickDate = ()=> {
                 value={value}
             />
             <CalendarStrip
-                scrollable
-                style={{height:80}}
-                calendarColor={'white'}
-                calendarHeaderStyle={{color: 'black'}}
-                dateNumberStyle={{color: 'black'}}
-                dateNameStyle={{color: 'black'}}
-                iconContainer={{flex: 0.1}}
-                markedDates={markedDatesArray}
+              calendarAnimation={{type: 'sequence', duration: 30}}
+              daySelectionAnimation={{type: 'border', duration: 200, borderWidth: 1, borderHighlightColor: 'blue'}}
+              scrollable
+              style={{height:80}}
+              calendarColor={'white'}
+              calendarHeaderStyle={{color: 'black'}}
+              dateNumberStyle={{color: 'black'}}
+              dateNameStyle={{color: 'black'}}
+              highlightDateNumberStyle={{color: 'black'}}
+              highlightDateNameStyle={{color: 'black'}}
+              disabledDateNameStyle={{color: 'grey'}}
+              disabledDateNumberStyle={{color: 'grey'}}
+              iconContainer={{flex: 0.1}}
             />
-            {/* <Calendar
-                current={'2020-05-12'}
-                // markedDates={{
-                //     date: {selected: true, marked: true, selectedColor: 'blue'},
-                // }}
-            /> */}
-            {/* <Agenda
-            //selected={date}
-            /> */}
         </>
     )
 }
